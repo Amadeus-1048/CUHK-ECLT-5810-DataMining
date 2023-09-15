@@ -10,4 +10,4 @@
 
 ## Contents
 
-[学习笔记](./notes.md)
+[学习笔记](./Notes.md)
