@@ -129,3 +129,35 @@ Need to encode.
 
 
 ## Feature Extraction
+
+- PCA   主成分分析
+- LDA  线性判别分析
+- 小波变换
+- 离散傅里叶变换
+
+
+
+# **Bayes & Decision Tree Classifiers**
+
+## Classification
+
+Definition
+
+- Classification is one of the fundamental skills for survival.
+- A kind of **supervised** learning
+
+
+
+## **Bayes Theorem**
+
+![](https://p.ipic.vip/w0k4p3.png)
+
+
+
+![](https://p.ipic.vip/93hd3o.png)
+
+分析：https://zhuanlan.zhihu.com/p/26262151
+
+
+
+## **Decision Making**
