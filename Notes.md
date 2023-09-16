@@ -161,3 +161,39 @@ Definition
 
 
 ## **Decision Making**
+
+- Rules can be easily extracted from the built tree.
+- One dataset, many possible trees
+- Simpler trees are generally preferred
+
+
+
+![](http://pic.guoyaohua.com/image/decision-tree/decision-tree-tutorial-animated3.gif)
+
+
+
+### ID3
+
+Iterative Dichotomizer 3
+
+One of the most influential Decision Trees models
+
+
+
+### **Entropy**
+
+熵
+
+
+
+Gain   信息增益  越大越好，表示降低了不确定性
+
+![](https://p.ipic.vip/halttt.png)
+
+
+
+### Overfiting
+
+**Definition**
+
+Given a hypothesis space *H*, a hypothesis *h* ∈ *H* is said to overfit the training data if there exists some alternative hypothesis *h*' ∈ *H*, such as *h* has smaller error than *h*' over the training samples, but *h*' has a smaller error than *h* over the entire distribution of instances.
