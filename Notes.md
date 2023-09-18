@@ -1,10 +1,23 @@
 # Data Preprocessing
 
+**Major Tasks in Data Preprocessing**
+
+- Data cleaning
+  - Fill in missing values, smooth noisy data, identify or remove outliers, and resolve inconsistencies
+- Data integration
+  - Integration of multiple databases, data cubes, or files
+-  Data transformation
+  - Normalization and aggregation
+- Data reduction
+  - Obtains reduced representation in volume but produces the same or similar analytical results 
+- Data discretization
+  - Part of data reduction but with particular importance, especially for numerical data
+
 ## Data Cleaning
 
 ### **Why Data Preprocessing?**
 
-- Real data are dirty!
+- Real data are dirty.
   - The biggest challenge in many data mining projects
 - Incomplete
 - Noisy
@@ -20,7 +33,7 @@
 
 
 
-### **How to handle missing data?**
+**How to handle missing data?**
 
 - Ignore
 - Fill in the missing values manually
@@ -48,6 +61,8 @@
 Now we have an error free dataset, but data still needs to be standardized.
 
 
+
+### Attribute
 
 **Attribute Types**
 
@@ -137,26 +152,15 @@ Need to encode.
 
 
 
-# **Bayes & Decision Tree Classifiers**
+
+
+# Classification – Decision Trees
 
 ## Classification
 
-Definition
+- Definition
 
-- Classification is one of the fundamental skills for survival.
-- A kind of **supervised** learning
-
-
-
-## **Bayes Theorem**
-
-![](https://p.ipic.vip/w0k4p3.png)
-
-
-
-![](https://p.ipic.vip/93hd3o.png)
-
-分析：https://zhuanlan.zhihu.com/p/26262151
+  - A kind of **supervised** learning
 
 
 
@@ -172,43 +176,53 @@ Definition
 
 
 
-### ID3
+**ID3**
 
-Iterative Dichotomizer 3
-
-One of the most influential Decision Trees models
+- Full name : Iterative Dichotomizer 3
 
 
-
-### **Entropy**
-
-熵
-
-
-
-Gain   信息增益  越大越好，表示降低了不确定性
-
-![](https://p.ipic.vip/halttt.png)
+- One of the most influential Decision Trees models
 
 
 
 
+**Entropy**   熵
+
+![](https://ask.qcloudimg.com/http-save/yehe-1729674/yfjmaaq3hx.png)
 
 
 
+**信息量**
+
+- 信息量在是作为信息“多少”的度量，这里的信息就是你理解的信息，比如一条新闻，考试答案等等
+
+- 当越不可能的事件发生了，我们获取到的信息量就越大。越可能发生的事件发生了，我们获取到的信息量就越小
+
+- 如已知事件Xi已发生，则表示Xi所含有或所提供的信息量：
+
+  - ![](https://ask.qcloudimg.com/http-save/yehe-1729674/glt8fc5w9d.png)
+
+  - 如果是以2为底数，单位是bit；如果以e为底数，单位是nat；如果以10为底数，单位是det；
+
+    例如，今天下雨的概率是0.5，则包含的信息量为 ：$- \log_{2}{0.5} = 1$
 
 
-### Overfiting
 
-**Definition**
+**Gain**   信息增益  
 
-Given a hypothesis space *H*, a hypothesis *h* ∈ *H* is said to overfit the training data if there exists some alternative hypothesis *h*' ∈ *H*, such as *h* has smaller error than *h*' over the training samples, but *h*' has a smaller error than *h* over the entire distribution of instances.
-
-
+- 越大越好，表示降低了不确定性
+- ![](https://ask.qcloudimg.com/http-save/yehe-1729674/to6z26uucj.png)
 
 
 
-### Example for ID3
+**Overfiting**
+
+- Definition
+  - Given a hypothesis space *H*, a hypothesis *h* ∈ *H* is said to overfit the training data if there exists some alternative hypothesis *h*' ∈ *H*, such as *h* has smaller error than *h*' over the training samples, but *h*' has a smaller error than *h* over the entire distribution of instances.
+
+
+
+## Example for ID3
 
 **ID3算法流程**
 
@@ -269,9 +283,23 @@ H(D~1~)针对的是数据集D~1~，整个集合中只有2个元素，所以分�
 
 
 
-### Example for C4.5
+## Example for C4.5
 
 ![](https://ask.qcloudimg.com/http-save/yehe-1729674/ztox8uu9wm.png)
 
 
+
+# **Bayes**
+
+
+
+## **Bayes Theorem**
+
+![](https://p.ipic.vip/w0k4p3.png)
+
+
+
+![](https://p.ipic.vip/93hd3o.png)
+
+分析：https://zhuanlan.zhihu.com/p/26262151
 
