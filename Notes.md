@@ -13,6 +13,8 @@
 - Data discretization
   - Part of data reduction but with particular importance, especially for numerical data
 
+
+
 ## Data Cleaning
 
 ### **Why Data Preprocessing?**
@@ -186,12 +188,6 @@ Need to encode.
 
 
 
-**Entropy**   熵
-
-![](https://ask.qcloudimg.com/http-save/yehe-1729674/yfjmaaq3hx.png)
-
-
-
 **信息量**
 
 - 信息量在是作为信息“多少”的度量，这里的信息就是你理解的信息，比如一条新闻，考试答案等等
@@ -205,6 +201,12 @@ Need to encode.
   - 如果是以2为底数，单位是bit；如果以e为底数，单位是nat；如果以10为底数，单位是det；
 
     例如，今天下雨的概率是0.5，则包含的信息量为 ：$- \log_{2}{0.5} = 1$
+
+
+
+**Entropy**   熵
+
+![](https://ask.qcloudimg.com/http-save/yehe-1729674/yfjmaaq3hx.png)
 
 
 
@@ -234,13 +236,17 @@ Need to encode.
 - 先选择信息增益最大的属性作为测试属性，将测试属性相同的样本转化为同一个子样本
 - 若子样本集的类别属性只含有单个属性，则分支为叶子节点，判断其属性值并标上相应的符号，然后返回调用处，否则对子样本递归调用本算法。
 
-#### 数据集D
+### Data set
+
+数据集D
 
 ![](https://ask.qcloudimg.com/http-save/yehe-1729674/isyjj5kjaq.png)
 
 
 
-#### 特征集A
+### Attribute set
+
+特征集A / 属性集A
 
 | Attribute1  考试成绩 A~1~ | 通过考试 | 没有通过考试 |
 | ------------------------- | -------- | ------------ |
@@ -267,7 +273,7 @@ Need to encode.
 
 
 
-#### 过程
+### Progress
 
 ![](https://ask.qcloudimg.com/http-save/yehe-1729674/wyqutrg01i.png)
 
